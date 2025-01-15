@@ -1,0 +1,24 @@
+group 'org.jrl.tools'
+
+version '1.0-SNAPSHOT'
+
+/**
+ * 此处依赖的包，禁止有玩吧业务相关依赖
+ */
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation group: 'io.micrometer', name: 'micrometer-core', version: '1.7.6'
+    //jackson
+    compile 'com.fasterxml.jackson.core:jackson-core:2.12.5'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.12.5'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+
+    testImplementation('ch.qos.logback:logback-classic:1.2.7')
+}
+
+test {
+    useJUnitPlatform()
+}
