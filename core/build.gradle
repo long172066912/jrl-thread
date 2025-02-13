@@ -2,9 +2,6 @@ group 'org.jrl.tools'
 
 version '1.0-SNAPSHOT'
 
-/**
- * 此处依赖的包，禁止有玩吧业务相关依赖
- */
 dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.32'
     implementation 'org.apache.commons:commons-lang3:3.12.0'

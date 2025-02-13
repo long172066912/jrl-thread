@@ -1,3 +1,4 @@
 rootProject.name = 'jrl-thread'
 
 include ":core"
+include ":jrl-thread-apollo"
